@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Andika New Basic', sans-serif;
-    background-color: white smoke;
+    /*background-color: #222222;*/
     color: #555555;
     text-align: center;
 }
@@ -10,11 +10,92 @@ body {
 #HOME {
     width: 100vw;
     height: 600px;
-    background-color: #555555;
+    /*background-color: #222222;*/
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 90vw;
+    height: 100px;
     display: flex;
     flex-direction: row;
+    margin: 5px auto;
+    background-color: orangered;
 }
-h1 {
-    font-size: 60px; 
+
+#Personal-Summary {
+    width: 600px;
+    height: 300px;
+    /*border: 4px solid white;*/
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto auto 100px;
+}
+#Personal-Summary> label {
+    width: 100px;
+    height: 45px;
+    background-color: blue;
+    color: white;
+    letter-spacing: 1px;
+    margin: 0 auto 5px 0;
+    line-height: 45px;
+    font-weight: bold;
+}
+#Personal-Summary> h1 {
+    color: #222222;
+    margin: 0;
+    text-align: left;
+    font-size: 60px;
+}
+#Personal-Summary-Button-Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 300px;
+    height: 60px;
+    /*border: 2px solid red;*/
+    margin: 5px 0;
+}
+
+#Personal-Summary-Button-Container> button {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    font-size: 18px;
+    letter-spacing: 1px;
+    /*color: white;*/
+    cursor: pointer;
+}
+
+#Hire-Me {
+    background-color: darkblue;
+    color: white;
+}
+
+#View-My-Portfolio {
+    background-color: transparent;
+    color: #333333;
+}
+
+#REACT-JS-ICON {
+    border-radius: 100%;
+    /*background-color: #111111;*/
+    position: relative;
+    margin: 0 0 0 800px;
+}
+
+#NODE-JS-ICON {
+    border-radius: 100%;
+    /*background-color: #111111;*/
+    position: relative;
+    margin: 0px 0 0 900px;
+}
+
+#PYTHON-ICON {
+    border-radius: 100%;
+    /*background-color: #111111;*/
+    position: relative;
+    margin: -300px 0 0 1000px;
 }
 
