@@ -1,40 +1,123 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="description" content="Darrell Hubbard portfolio; includes all of the best projects.">
-  <meta name="keywords" content="web page, business site, website">
-  <meta name="author" content="Darrell Hubbard">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Darrell Hubbard</title>
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap" rel="stylesheet">
-  <!-- Stylesheets -->
-  <link href="style.css" rel="stylesheet" />
-  <!-- JavaScripts -->
-  <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darrell Hubbard Home</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link href="style.css" rel="stylesheet" />
+    <link href="mobile.css" rel="stylesheet" />
+    <!-- javascript -->
+    <script src="./script.js"></script>
 </head>
 <body>
-  
-  <header></header>
 
-  <div id="HOME">
-    <div id="Personal-Summary">
-      <label>Web Dev</label>
-      <h1>Darrell Hubbard</h1>
-      <div id="Personal-Summary-Button-Container">
-        <button type="button" id="Hire-Me" >Hire Me</button>
-        <button type="button" id="View-My-Portfolio" >View Portfolio</button>
-      </div> 
+    <div id="socialNavLinksHeader">
+        <h4>Follow Darrell @</h4>
+        <img src="" alt="facebook" width="25" height="25" />
+        <img src="" alt="twitter" width="25" height="25" />
+        <img src="" alt="instagram" width="25" height="25" />
     </div>
 
-      <img src="./images/react-js.png" alt="React JS" id="REACT-JS-ICON" width="60" height="60" />
-      <img src="./images/node-js.png" alt="Node JS" id="NODE-JS-ICON" width="100" height="100" />
-      <img src="./images/python.png" alt="PYTHON" id="PYTHON-ICON" width="200" height="200" />
-  </div>
+    <header>
+        <h2>Darrell Hubbard</h2>
+        <nav>
+            <a href="./index.html" class="navLinks">Home</a>
+            <a href="" class="navLinks">Services</a>
+            <a href="" class="navLinks">Portfolio</a>
+            <a href="" class="navLinks">About</a>
+            <a href="./contact.html" class="navLinks">Contact</a>
+        </nav>
+        <div id="userAuth">
+            <a href="">Login</a>
+            <a href="">SignUp</a>
+        </div>
+    </header>
+    <div id="Home">
+        <!-- Name -->
+        <h1>Darrell Hubbard</h1>
+        <!-- Description -->
+        <article>
+            <label>FULL STACK WEB DEVELOPER</label>
+            <h1>Lorem ipsum dolor sit amet</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+
+            <button type="button" id="View-My-Portfolio-Link">Portfolio</button>
+            <button type="button" id="GetServices">View Services</button>
+        </article>
+
+    </div>
+
+    <div id="AboutMe">
+        <img src="images/darrellhubbard.jpg" alt="picture of darrell hubbard" width="250" height="300" />
+        <article>
+            <label>Lorem ipsum</label>
+            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            </p>
+            <button type="button">Download CSV</button>
+        </article>
+    </div> 
 
 
+    <div id="Portfolio">
+
+        <div id="ProjectDescription">
+
+            <h1>Latest Works</h1>
+            <h3>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+
+        </div>
+        <div id="Projects"></div>
+
+    </div> 
+
+
+    <div id="MyServices">
+
+        <div id="Services">
+
+            <article>
+                <img src="images/website icon.png" alt="" width="45" height="45" />
+                <h2>Websites</h2>
+                <a href="">Lorem ipsum,</a>
+            </article>
+
+            <article>
+                <img src="images/podcast icon.png" alt="" width="45" height="45" />
+                <h2>Podcast Apps</h2>
+                <a href="">Lorem ipsum,</a>
+            </article>
+
+            <article>
+                <img src="images/database icon.png" alt="" width="45" height="45" />
+                <h2>Web Database Apps</h2>
+                <a href="">Lorem ipsum,</a>
+            </article>
+
+        </div> 
+
+    </div>
+
+    <div id="Skills"></div>
+
+    <div id="Portfolio"></div>
+
+    <!-- a chat application that can send me an email and or chat with me live -->
+    <div id="ChatApp-Close" onmouseover = "openChatApp(this)">Let's Chat</div> 
+
+    <footer></footer>
 
 </body>
 </html>

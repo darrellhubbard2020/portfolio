@@ -1,0 +1,269 @@
+/* Mobile Responsive for phones with 450px view screen; */
+@media only screen and (max-width: 414px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    #socialNavLinksHeader {
+        background-color: blue;
+    }
+    header {
+        background-color: #111111;
+    }
+    header> h2 {
+        display: none;
+        overflow: hidden;
+        font-size: 14px;
+    }
+    header> nav {
+        height: 25px;
+        width: 125px;
+        overflow: hidden;
+        flex-direction: column;
+        background-color: black;
+        margin: 15px 5px 0 0;
+    }
+    header> nav:hover {
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+        background-color: black;
+        color: white;
+        min-height: 200px;
+        width: 500px;
+        overflow-y: scroll;
+    }::-webkit-scrollbar {
+        display: none;
+    }
+    header> nav> a {
+        width: 98%;
+        height: 30px;
+        line-height: 30px;
+        text-indent: 5px;
+        font-size: 16px;
+        margin: 0 auto;
+        transform: translateY(60px);
+    }
+
+    /* normal operations when hovering a link */
+    header> nav> a:hover {
+        background-color: blue;
+        color: white;
+        cursor: pointer;
+        transition-duration: 0.5s;
+        border: 0;
+    }
+    /* when you hover the navbar then the links will correct themselves */
+    header> nav:hover> header> nav> a {
+        transform: translateY(60px);
+    }
+    #userAuth {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        height: 40px;
+        width: 85px;
+        margin: 5px 0 0 auto;
+    }
+    #userAuth:hover {
+        background-color: white;
+        min-height: 30px;
+        width: 85px;
+        z-index: 1;
+    }
+
+    #userAuth> a {
+        line-height: 40px;
+        height: 40px;
+        border-bottom: 2px solid gray;
+        font-size: 14px;
+        background-color: transparent;
+        color: #ffffff;
+        transform: translateY(40px);
+        width: 98%;
+        margin: 0 auto;
+    }
+    #userAuth:hover> #userAuth> a {
+        color: #333333;
+    }
+
+    #Home {
+        flex-direction: column;
+        height: 700px;
+        width: 100vw;
+    }
+    #Home> h1 {
+        text-align: center;
+        position: relative;
+        margin: 50px auto 5px auto;
+        top: 0;
+        left: 0;
+        font-size: 45px;
+    }
+    #Home> article {
+        text-align: center;
+        position: relative;
+        margin: 5px auto auto auto;
+        top: 0;
+        left: 0;
+    }
+    #Home> article> button {
+        margin: 5px auto 5px auto;
+    }
+    #View-My-Portfolio-Link {
+        background-color: #555555;
+        color: white;
+        border-bottom: 0;
+        border-radius: 4px;
+        top: 400px;
+        left: 50px;
+        margin: 100px auto;
+    }
+
+
+    #AboutMe {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        min-width: 100vw;
+    }
+    #AboutMe> img {
+        width: 100px;
+        height: 100px;
+        margin: 50px auto 5px auto;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    #AboutMe> article {
+        margin: 5px auto;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    #AboutMe> article> button {
+        margin: 5px auto;
+        background-color: whitesmoke;
+        color: red;
+    }
+
+    #Portfolio {
+        width: 100vw;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+    }
+    #ProjectDescription {
+        width: 350px;
+        height: 300px;
+        margin: auto 0 auto 25px;
+        display: flex;
+        flex-direction: column;
+    }
+    #ProjectDescription> * {
+        width: 300px;
+        margin: 10px auto;
+    }
+    #ProjectDescription> h1 {
+        font-size: 30px;
+    }
+    #ProjectDescription> h3 {
+        font-size: 25px;
+    }
+    #ProjectDescription> p {
+        font-size: 16px;
+    }
+    
+    #Projects {
+        width: 200px;
+        height: 300px;
+        margin: 10px auto;
+        display: grid;
+        grid-template-columns: repeat(8, 200px);
+        grid-template-rows: 300px;
+        grid-column-gap: 50px;
+        overflow: hidden;
+        overflow-x: scroll;
+    }
+    .projects {
+        display: flex;
+        flex-direction: column;
+        transform: translateX(0);
+    }
+    .project-images {
+        width: 100%;
+        height: 125px;
+    }
+    .project-images> img {
+        object-fit: cover;
+        object-position: center;
+    }
+    .project-titles {
+        width: 90%;
+        height: 25px;
+        text-indent: 5px;
+        font-size: 18px;
+        line-height: 25px;
+        margin: 2px auto;
+        overflow: hidden;
+    }
+    .project-description {
+        width: 90%;
+        height: 75px;
+        margin: 0 auto;
+        margin-bottom: 2px;
+        font-size: 12px;
+    }
+    .projects> button {
+        border: 2px solid darkblue;
+        color: darkblue;
+        background-color: white;
+    }
+    .projects> button:hover {
+        background-color: blue;
+        transform: translateX(0);
+    }
+
+
+    #MyServices {
+        width: 100vw;
+        height: 500px;
+    }
+    @keyframes viewServiceCarousel {
+        0%, 15% {
+            transform: translateX(0vw);
+        }
+        30%, 45% {
+            transform: translateX(-65vw);
+        }
+        60%, 100% {
+            transform: translateX(-125vw);
+        }
+    }
+    #Services {
+        width: 60vw;
+        height: 200px;
+        overflow: hidden;
+        left: 100px;
+        top: 250px;
+        overflow-x: scroll;
+    }
+    #Services> article {
+        min-width: 60vw;
+        height: 100%;
+        background-color: rgb(0, 0, 0, 0.6);
+        animation-name: viewServiceCarousel;
+        animation-duration: 12s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+    }
+    #Services> article> h2 {
+        font-size: 30px;
+    }
+
+
+    #EmailSubcriptionApp {
+
+    }
+}
